@@ -1,7 +1,7 @@
 import React from 'react';
 import TypingEffect from './TypingEffect';
 
-const Question = ({ question, options, scripture, onNavigate }) => {
+const Question = ({ question, options = [], scripture, onNavigate }) => {
     const handleAnswer = (nextId) => {
         onNavigate(nextId);
     };
@@ -15,15 +15,19 @@ const Question = ({ question, options, scripture, onNavigate }) => {
                 />
             </h1>
             <div style={styles.optionsContainer}>
-                {options.map((option, index) => (
-                    <button
-                        key={index}
-                        onClick={() => handleAnswer(option.nextId)}
-                        style={styles.button}
-                    >
-                        {option.text}
-                    </button>
-                ))}
+                {options.length > 0 ? (
+                    options.map((option, index) => (
+                        <button
+                            key={index}
+                            onClick={() => handleAnswer(option.nextId)}
+                            style={styles.button}
+                        >
+                            {option.text}
+                        </button>
+                    ))
+                ) : (
+                    <p>No options available</p> // Graceful fallback
+                )}
             </div>
             {scripture && (
                 <div style={styles.scriptureContainer}>
@@ -70,10 +74,6 @@ const styles = {
         color: '#000000', // Black text
         cursor: 'pointer',
         transition: 'background-color 0.3s, color 0.3s', // Smooth hover effect
-    },
-    buttonHover: {
-        backgroundColor: '#000000', // Inverted colors on hover
-        color: '#ffffff',
     },
     scriptureContainer: {
         marginTop: '30px',
