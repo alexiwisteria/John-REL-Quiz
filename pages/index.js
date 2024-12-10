@@ -5,7 +5,7 @@ export default function Home() {
             <p style={styles.description}>
                 Welcome to a journey of faith and choice. Inspired by the timeless teachings of John, this interactive story invites you to explore themes of light, love, and redemption. Each decision reveals a lesson—will you follow the light or wander the shadows?
             </p>
-            <a href="/quiz/1" style={styles.link}>
+            <a href="#/quiz/1" style={styles.link}>
                 <button style={styles.button}>Start the Adventure</button>
             </a>
             <p style={styles.betaNote}>This is a beta version. Your feedback is welcome!</p>
