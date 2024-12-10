@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "question": "You stand at the edge of a misty forest. A gentle voice whispers, 'Follow the Word and find truth.' Do you step forward?",
+    "scripture": {
+      "text": "'My sheep listen to my voice; I know them, and they follow me.'",
+      "reference": "John 10:27"
+    },
+    "options": [
+      { "text": "Yes, I trust the voice.", "nextId": 2 },
+      { "text": "No, I stay where I am.", "nextId": 3, "isBad": true }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "You find a traveler sitting by the path, their face full of sorrow. They ask, 'Will you help me?'",
+    "scripture": {
+      "text": "'A new command I give you: Love one another. As I have loved you, so you must love one another.'",
+      "reference": "John 13:34"
+    },
+    "options": [
+      { "text": "Yes, I will help them.", "nextId": 4 },
+      { "text": "No, I must move on.", "nextId": 5, "isBad": true }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "The forest grows darker as you turn away. A second voice calls, 'There is still time to follow the light.' Do you turn back?",
+    "scripture": {
+      "text": "'If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness.'",
+      "reference": "1 John 1:9"
+    },
+    "options": [
+      { "text": "Yes, I turn back.", "nextId": 6 },
+      { "text": "No, I walk further into the darkness.", "nextId": 7, "isBad": true }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "The traveler joins you. Together, you reach a small village. The villagers need help. Do you stop to lend a hand?",
+    "scripture": {
+      "text": "'Dear children, let us not love with words or speech but with actions and in truth.'",
+      "reference": "1 John 3:18"
+    },
+    "options": [
+      { "text": "Yes, I will help.", "nextId": 8 },
+      { "text": "No, I must continue my journey.", "nextId": 5, "isBad": true }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "You press on alone. The path feels empty, yet shadows grow thicker. Do you pause to reflect?",
+    "scripture": {
+      "text": "'The light shines in the darkness, and the darkness has not overcome it.'",
+      "reference": "John 1:5"
+    },
+    "options": [
+      { "text": "Yes, I reflect and pray.", "nextId": 6 },
+      { "text": "No, I continue walking.", "nextId": 7, "isBad": true }
+    ]
+  },
+  {
+    "id": 6,
+    "result": "The light surrounds you as you reflect. Grace washes over you, and the path becomes clear. You feel renewed, knowing that love and faith have guided your steps.",
+    "scripture": {
+      "text": "'For the Lamb at the center of the throne will be their shepherd; he will lead them to springs of living water.'",
+      "reference": "Revelation 7:17"
+    }
+  },
+  {
+    "id": 7,
+    "result": "The shadows consume the path. Yet, in the distance, a faint light remains, a reminder that redemption is always near. You feel the pull to turn back but remain hesitant.",
+    "scripture": {
+      "text": "'The Spirit and the bride say, “Come!” And let the one who hears say, “Come!” Let the one who is thirsty come; and let the one who wishes take the free gift of the water of life.'",
+      "reference": "Revelation 22:17"
+    }
+  },
+  {
+    "id": 8,
+    "question": "Your work is done. A villager gives you a lantern, saying, 'Let this light guide you.' Will you carry it with hope?",
+    "scripture": {
+      "text": "'I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life.'",
+      "reference": "John 8:12"
+    },
+    "options": [
+      { "text": "Yes, I will carry the light.", "nextId": 6 },
+      { "text": "No, I leave it behind.", "nextId": 5, "isBad": true }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "A glowing light appears in the distance. It whispers, 'Love never fails.' Do you follow it?",
+    "scripture": {
+      "text": "'Whoever does not love does not know God, because God is love.'",
+      "reference": "1 John 4:8"
+    },
+    "options": [
+      { "text": "Yes, I follow the light.", "nextId": 6 },
+      { "text": "No, I doubt its promise.", "nextId": 7, "isBad": true }
+    ]
+  },
+  {
+    "id": 10,
+    "ending": {
+      "title": "Thank You for Walking the Journey",
+      "message": "This story was crafted as a reflection on the teachings of scripture, designed to encourage thought, introspection, and faith. Much like life, each choice you made on this journey was an opportunity to grow closer to the light and align with God's will. As John teaches, 'God is light; in him, there is no darkness at all.' (1 John 1:5). In the forest, you faced moments of trust, service, and grace. These reflect the eternal call to follow Christ, share His love, and carry His light into the world. Let this journey remind you that every step, even those misdirected, can lead back to redemption when taken in faith."
+    }
+  }
+]
